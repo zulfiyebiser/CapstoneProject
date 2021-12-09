@@ -1,0 +1,1759 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 561000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user goes to Amazon Home Page",
+            "match": {
+              "location": "stepDefinitions.TC01StepDefinitions.user_goes_to_amazon_home_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 122000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user clicks signin button",
+            "match": {
+              "location": "stepDefinitions.TC01StepDefinitions.user_clicks_signin_button()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-12-09T17:30:49.634Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1769000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hook.setUp()"
+            }
+          }
+        ],
+        "line": 9,
+        "name": "Amazon invalid sign in",
+        "description": "",
+        "id": "amazon-invalid-sign-in;amazon-invalid-sign-in",
+        "after": [
+          {
+            "result": {
+              "duration": 165000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hook.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 142000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user enters invalid email",
+            "match": {
+              "location": "stepDefinitions.TC01StepDefinitions.users_enters_invalid_email()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 114000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "clicks continue button",
+            "match": {
+              "location": "stepDefinitions.TC01StepDefinitions.clicks_continue_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 108000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "checks that the error message is displayed",
+            "match": {
+              "location": "stepDefinitions.TC01StepDefinitions.checks_that_the_error_message_is_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@all"
+          },
+          {
+            "name": "@Parallel11"
+          }
+        ]
+      }
+    ],
+    "name": "Amazon invalid sign in",
+    "description": "",
+    "id": "amazon-invalid-sign-in",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/TC01.feature",
+    "tags": [
+      {
+        "name": "@all",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@Parallel11",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 3,
+    "elements": [
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 408000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user goes to Amazon Home Page",
+            "match": {
+              "location": "stepDefinitions.TC01StepDefinitions.user_goes_to_amazon_home_page()"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-12-09T17:30:49.752Z",
+        "before": [
+          {
+            "result": {
+              "duration": 944000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hook.setUp()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "Search for product add to basket",
+        "description": "",
+        "id": "amazon-search;search-for-product-add-to-basket;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 176000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hook.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 218000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user searches for \"computer\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"computer\"",
+                  "offset": 18
+                }
+              ],
+              "location": "stepDefinitions.TC04StepDefinitions.user_searches_for(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 193000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the search results are displayed",
+            "match": {
+              "location": "stepDefinitions.TC02StepDefinitions.the_search_results_are_displayed()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 434000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the search results has the \"computer\" in it",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"computer\"",
+                  "offset": 27
+                }
+              ],
+              "location": "stepDefinitions.TC02StepDefinitions.the_search_results_has_the_in_it(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@all"
+          },
+          {
+            "name": "@Parallel1"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 143000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user goes to Amazon Home Page",
+            "match": {
+              "location": "stepDefinitions.TC01StepDefinitions.user_goes_to_amazon_home_page()"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-12-09T17:30:49.840Z",
+        "before": [
+          {
+            "result": {
+              "duration": 266000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hook.setUp()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "Search for product add to basket",
+        "description": "",
+        "id": "amazon-search;search-for-product-add-to-basket;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 111000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hook.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1581000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user searches for \"flower\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"flower\"",
+                  "offset": 18
+                }
+              ],
+              "location": "stepDefinitions.TC04StepDefinitions.user_searches_for(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 446000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the search results are displayed",
+            "match": {
+              "location": "stepDefinitions.TC02StepDefinitions.the_search_results_are_displayed()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 202000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the search results has the \"flower\" in it",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"flower\"",
+                  "offset": 27
+                }
+              ],
+              "location": "stepDefinitions.TC02StepDefinitions.the_search_results_has_the_in_it(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@all"
+          },
+          {
+            "name": "@Parallel1"
+          }
+        ]
+      }
+    ],
+    "name": "Amazon search",
+    "description": "",
+    "id": "amazon-search",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/TC02.feature",
+    "tags": [
+      {
+        "name": "@all",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@Parallel1",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 3,
+    "elements": [
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 439000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user goes to Amazon Home Page",
+            "match": {
+              "location": "stepDefinitions.TC01StepDefinitions.user_goes_to_amazon_home_page()"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-12-09T17:30:49.883Z",
+        "before": [
+          {
+            "result": {
+              "duration": 501000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hook.setUp()"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "",
+        "description": "",
+        "id": "check-basket-total;;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 200000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hook.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 741000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user searches for \"computer laptop\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"computer laptop\"",
+                  "offset": 18
+                }
+              ],
+              "location": "stepDefinitions.TC04StepDefinitions.user_searches_for(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 762000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the search results has the \"computer laptop\" in it",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"computer laptop\"",
+                  "offset": 27
+                }
+              ],
+              "location": "stepDefinitions.TC02StepDefinitions.the_search_results_has_the_in_it(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 299000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user adds first item to basket",
+            "match": {
+              "location": "stepDefinitions.TC03StepDefinitions.user_adds_to_basket()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 235000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user checks basket total",
+            "match": {
+              "location": "stepDefinitions.TC03StepDefinitions.user_checks_basket_total()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 216000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "it should match the price of the item added into basket",
+            "match": {
+              "location": "stepDefinitions.TC03StepDefinitions.it_should_match_the_price_of_the_item_added_into_basket()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@all"
+          },
+          {
+            "name": "@Parallel1"
+          }
+        ]
+      }
+    ],
+    "name": "Check basket total",
+    "description": "",
+    "id": "check-basket-total",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/TC03.feature",
+    "tags": [
+      {
+        "name": "@all",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@Parallel1",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 3,
+    "elements": [
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 724000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user goes to Amazon Home Page",
+            "match": {
+              "location": "stepDefinitions.TC01StepDefinitions.user_goes_to_amazon_home_page()"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-12-09T17:30:49.932Z",
+        "before": [
+          {
+            "result": {
+              "duration": 684000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hook.setUp()"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "Second most expensive product contains Nikon D3X",
+        "description": "",
+        "id": "amazon-search-feature;second-most-expensive-product-contains-nikon-d3x",
+        "after": [
+          {
+            "result": {
+              "duration": 538000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hook.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 558000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user searches for \"Nikon\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Nikon\"",
+                  "offset": 18
+                }
+              ],
+              "location": "stepDefinitions.TC04StepDefinitions.user_searches_for(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 317000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "sorts the result from highest price to lowest",
+            "match": {
+              "location": "stepDefinitions.TC04StepDefinitions.sorts_the_result_from_highest_price_to_lowest()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 767000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "clicks second product for details",
+            "match": {
+              "location": "stepDefinitions.TC04StepDefinitions.clicks_second_product_for_details()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 687000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "checks product title contains \"Nikon D3100\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Nikon D3100\"",
+                  "offset": 30
+                }
+              ],
+              "location": "stepDefinitions.TC04StepDefinitions.checks_product_title_contains(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@all"
+          },
+          {
+            "name": "@Parallel1"
+          }
+        ]
+      }
+    ],
+    "name": "Amazon Search Feature",
+    "description": "",
+    "id": "amazon-search-feature",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/TC04.feature",
+    "tags": [
+      {
+        "name": "@all",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@Parallel1",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 3,
+    "elements": [
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 229000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user goes to Amazon Home Page",
+            "match": {
+              "location": "stepDefinitions.TC01StepDefinitions.user_goes_to_amazon_home_page()"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-12-09T17:30:49.971Z",
+        "before": [
+          {
+            "result": {
+              "duration": 147000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hook.setUp()"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "Check the Computers menu",
+        "description": "",
+        "id": "check-the-sub-menu;check-the-computers-menu",
+        "after": [
+          {
+            "result": {
+              "duration": 120000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hook.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 259000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user clicks to All categories",
+            "match": {
+              "location": "stepDefinitions.TC05StepDefinitions.user_clicks_to_all_categories()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 249000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "selects Computers",
+            "match": {
+              "location": "stepDefinitions.TC05StepDefinitions.selects_computers()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 205000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "checks that Computers menu has 15 sub categories",
+            "match": {
+              "arguments": [
+                {
+                  "val": "15",
+                  "offset": 31
+                }
+              ],
+              "location": "stepDefinitions.TC05StepDefinitions.checks_that_computers_menu_has_sub_categories(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@all"
+          },
+          {
+            "name": "@Parallel1"
+          }
+        ]
+      }
+    ],
+    "name": "check the sub menu",
+    "description": "",
+    "id": "check-the-sub-menu",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/TC05.feature",
+    "tags": [
+      {
+        "name": "@all",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@Parallel1",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 3,
+    "elements": [
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 252000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user goes to Amazon Home Page",
+            "match": {
+              "location": "stepDefinitions.TC01StepDefinitions.user_goes_to_amazon_home_page()"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-12-09T17:30:50.005Z",
+        "before": [
+          {
+            "result": {
+              "duration": 372000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hook.setUp()"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "",
+        "description": "",
+        "id": "all-listed-products-contain-...;",
+        "after": [
+          {
+            "result": {
+              "duration": 302000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hook.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 316000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user clicks to All categories",
+            "match": {
+              "location": "stepDefinitions.TC05StepDefinitions.user_clicks_to_all_categories()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 771000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "selects Computers",
+            "match": {
+              "location": "stepDefinitions.TC05StepDefinitions.selects_computers()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 425000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "selects Computer Components",
+            "match": {
+              "location": "stepDefinitions.TC06StepDefinitions.selects_computer_components()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 359000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "selects the Seagate checkbox",
+            "match": {
+              "location": "stepDefinitions.TC06StepDefinitions.selects_the_Seagate_checkbox()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 660000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "verifies that all listed products contain \"Seagate\" information",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Seagate\"",
+                  "offset": 42
+                }
+              ],
+              "location": "stepDefinitions.TC06StepDefinitions.verifies_that_all_listed_products_contain_information(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@all"
+          },
+          {
+            "name": "@Parallel2"
+          }
+        ]
+      }
+    ],
+    "name": "all listed products contain ...",
+    "description": "",
+    "id": "all-listed-products-contain-...",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/TC06.feature",
+    "tags": [
+      {
+        "name": "@all",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@Parallel2",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 3,
+    "elements": [
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 151000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user goes to Amazon Home Page",
+            "match": {
+              "location": "stepDefinitions.TC01StepDefinitions.user_goes_to_amazon_home_page()"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-12-09T17:30:50.050Z",
+        "before": [
+          {
+            "result": {
+              "duration": 174000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hook.setUp()"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "",
+        "description": "",
+        "id": "all-listed-products-contain-...;",
+        "after": [
+          {
+            "result": {
+              "duration": 124000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hook.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 115000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user clicks to All categories",
+            "match": {
+              "location": "stepDefinitions.TC05StepDefinitions.user_clicks_to_all_categories()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 111000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "selects Computers",
+            "match": {
+              "location": "stepDefinitions.TC05StepDefinitions.selects_computers()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 101000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "selects Computer Components",
+            "match": {
+              "location": "stepDefinitions.TC06StepDefinitions.selects_computer_components()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 93000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "selects the first product listed",
+            "match": {
+              "location": "stepDefinitions.TC07StepDefinitions.selects_the_first_product_listed()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 253000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "adds to cart",
+            "match": {
+              "location": "stepDefinitions.TC07StepDefinitions.adds_to_cart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 196000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user clicks to All categories",
+            "match": {
+              "location": "stepDefinitions.TC05StepDefinitions.user_clicks_to_all_categories()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 218000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "selects Electronics",
+            "match": {
+              "location": "stepDefinitions.TC07StepDefinitions.selects_electronics()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 670000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "selects Camera \u0026 Photo",
+            "match": {
+              "location": "stepDefinitions.TC07StepDefinitions.selects_camera_photo()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 436000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "selects the second product listed",
+            "match": {
+              "location": "stepDefinitions.TC07StepDefinitions.selects_the_second_product_listed()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 387000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "adds to cart",
+            "match": {
+              "location": "stepDefinitions.TC07StepDefinitions.adds_to_cart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 430000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "goes to cart",
+            "match": {
+              "location": "stepDefinitions.TC07StepDefinitions.goToCart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 869000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "Verifies that there are 2 items in the cart",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 24
+                }
+              ],
+              "location": "stepDefinitions.TC07StepDefinitions.verifies_that_there_are_items_in_the_cart(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 232000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "deletes the first item in the cart",
+            "match": {
+              "location": "stepDefinitions.TC07StepDefinitions.deletes_the_first_item_in_the_cart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 126000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "Verifies that there are 1 items in the cart",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 24
+                }
+              ],
+              "location": "stepDefinitions.TC07StepDefinitions.verifies_that_there_are_items_in_the_cart(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@all"
+          },
+          {
+            "name": "@Parallel2"
+          }
+        ]
+      }
+    ],
+    "name": "all listed products contain ...",
+    "description": "",
+    "id": "all-listed-products-contain-...",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/TC07.feature",
+    "tags": [
+      {
+        "name": "@all",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@Parallel2",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 3,
+    "elements": [
+      {
+        "start_timestamp": "2021-12-09T17:30:50.093Z",
+        "before": [
+          {
+            "result": {
+              "duration": 393000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hook.setUp()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "",
+        "description": "",
+        "id": "all-listed-products-contain-...;",
+        "after": [
+          {
+            "result": {
+              "duration": 497000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hook.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 350000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user goes to Amazon Home Page",
+            "match": {
+              "location": "stepDefinitions.TC01StepDefinitions.user_goes_to_amazon_home_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 213000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "opens the signin window",
+            "match": {
+              "location": "stepDefinitions.TC08StepDefinitions.opens_the_signin_window()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 186000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "clicks  Create a List link",
+            "match": {
+              "location": "stepDefinitions.TC08StepDefinitions.clicks_create_a_list_link()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 123000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Verifies that the title contains \"Your List\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Your List\"",
+                  "offset": 33
+                }
+              ],
+              "location": "stepDefinitions.TC08StepDefinitions.verifies_that_the_title_contains(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@all"
+          },
+          {
+            "name": "@Parallel2"
+          }
+        ]
+      }
+    ],
+    "name": "all listed products contain ...",
+    "description": "",
+    "id": "all-listed-products-contain-...",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/TC08.feature",
+    "tags": [
+      {
+        "name": "@all",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@Parallel2",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 3,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 314000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user goes to Amazon Home Page",
+            "match": {
+              "location": "stepDefinitions.TC01StepDefinitions.user_goes_to_amazon_home_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-12-09T17:30:50.125Z",
+        "before": [
+          {
+            "result": {
+              "duration": 289000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hook.setUp()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "",
+        "description": "",
+        "id": "valid-sign-in;",
+        "after": [
+          {
+            "result": {
+              "duration": 643000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hook.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 455000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user clicks signin button",
+            "match": {
+              "location": "stepDefinitions.TC01StepDefinitions.user_clicks_signin_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 371000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user enters valid email",
+            "match": {
+              "location": "stepDefinitions.TC09StepDefinitions.users_enters_valid_email()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1923000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "clicks continue button",
+            "match": {
+              "location": "stepDefinitions.TC01StepDefinitions.clicks_continue_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 233000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user enters valid password",
+            "match": {
+              "location": "stepDefinitions.TC09StepDefinitions.userEntersValidPassword()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 207000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "verifies that Hello, Login text on the sign in button",
+            "match": {
+              "location": "stepDefinitions.TC09StepDefinitions.verifiesThatHelloLoginTextOnTheSignInButton()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@all"
+          },
+          {
+            "name": "@Parallel2"
+          }
+        ]
+      }
+    ],
+    "name": "valid sign in",
+    "description": "",
+    "id": "valid-sign-in",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/TC09.feature",
+    "tags": [
+      {
+        "name": "@all",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@Parallel2",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 3,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 521000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user goes to Amazon Home Page",
+            "match": {
+              "location": "stepDefinitions.TC01StepDefinitions.user_goes_to_amazon_home_page()"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-12-09T17:30:50.162Z",
+        "before": [
+          {
+            "result": {
+              "duration": 637000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hook.setUp()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "",
+        "description": "",
+        "id": "create-a-list;",
+        "after": [
+          {
+            "result": {
+              "duration": 335000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hook.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 286000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user clicks signin button",
+            "match": {
+              "location": "stepDefinitions.TC01StepDefinitions.user_clicks_signin_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 209000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user enters valid email",
+            "match": {
+              "location": "stepDefinitions.TC09StepDefinitions.users_enters_valid_email()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 289000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "clicks continue button",
+            "match": {
+              "location": "stepDefinitions.TC01StepDefinitions.clicks_continue_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 890000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user enters valid password",
+            "match": {
+              "location": "stepDefinitions.TC09StepDefinitions.userEntersValidPassword()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 296000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user searches for \"samsung laptop\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"samsung laptop\"",
+                  "offset": 18
+                }
+              ],
+              "location": "stepDefinitions.TC04StepDefinitions.user_searches_for(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 209000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "selects the first item",
+            "match": {
+              "location": "stepDefinitions.TC10StepDefinitions.selects_the_first_item()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 151000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "users clicks add to List button",
+            "match": {
+              "location": "stepDefinitions.TC10StepDefinitions.users_clicks_add_to_list_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 150000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "opens to shopping list",
+            "match": {
+              "location": "stepDefinitions.TC10StepDefinitions.opens_to_shopping_list()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 157000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "checks if the product is in the list",
+            "match": {
+              "location": "stepDefinitions.TC10StepDefinitions.checks_if_the_product_is_in_the_list()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 788000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "clicks delete button",
+            "match": {
+              "location": "stepDefinitions.TC10StepDefinitions.clicks_delete_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 316000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "checks if the product is not in the list",
+            "match": {
+              "location": "stepDefinitions.TC10StepDefinitions.checks_if_the_product_is_not_in_the_list()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@all"
+          },
+          {
+            "name": "@Parallel2"
+          }
+        ]
+      }
+    ],
+    "name": "create a list",
+    "description": "",
+    "id": "create-a-list",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/TC10.feature",
+    "tags": [
+      {
+        "name": "@all",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@Parallel2",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

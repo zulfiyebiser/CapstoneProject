@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="21.398">
+    <testcase classname="valid sign in" name="_2" time="21.102">
+        <system-out><![CDATA[Given user goes to Amazon Home Page.........................................passed
+Then user clicks signin button..............................................passed
+And user enters valid email.................................................passed
+And clicks continue button..................................................passed
+Then user enters valid password.............................................passed
+And verifies that Hello, Login text on the sign in button...................passed
+]]></system-out>
+    </testcase>
+</testsuite>
