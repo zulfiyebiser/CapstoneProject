@@ -1,12 +1,197 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="21.398">
-    <testcase classname="valid sign in" name="_2" time="21.102">
-        <system-out><![CDATA[Given user goes to Amazon Home Page.........................................passed
-Then user clicks signin button..............................................passed
-And user enters valid email.................................................passed
-And clicks continue button..................................................passed
-Then user enters valid password.............................................passed
-And verifies that Hello, Login text on the sign in button...................passed
-]]></system-out>
+<testsuite errors="0" failures="5" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="5" time="25.808">
+    <testcase classname="all listed products contain ..." name="_2" time="25.353">
+        <failure message="no such window: target window already closed&#10;from unknown error: web view not found&#10;  (Session info: chrome=96.0.4664.93)&#10;Build info: version: '4.0.0', revision: '3a21814679'&#10;System info: host: 'Zulfiyes-MacBook-Pro.local', ip: '2603:8081:1607:f1b7:0:0:0:14b4%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '14.0.2'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [a77c9f17d4e4b3e9abd4c4f08c60038b, findElements {using=xpath, value=//ul[@data-menu-id='6']//li}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.93, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /var/folders/w0/2f6p2hfj42v...}, goog:chromeOptions: {debuggerAddress: localhost:64503}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:64503/devtoo..., se:cdpVersion: 96.0.4664.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: a77c9f17d4e4b3e9abd4c4f08c60038b" type="org.openqa.selenium.NoSuchWindowException"><![CDATA[When user goes to Amazon Home Page..........................................passed
+And user clicks to All categories...........................................passed
+And selects Computers.......................................................passed
+And selects Computer Components.............................................failed
+And selects the Seagate checkbox............................................skipped
+Then verifies that all listed products contain "Seagate" information........skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=96.0.4664.93)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'Zulfiyes-MacBook-Pro.local', ip: '2603:8081:1607:f1b7:0:0:0:14b4%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '14.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a77c9f17d4e4b3e9abd4c4f08c60038b, findElements {using=xpath, value=//ul[@data-menu-id='6']//li}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.93, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /var/folders/w0/2f6p2hfj42v...}, goog:chromeOptions: {debuggerAddress: localhost:64503}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:64503/devtoo..., se:cdpVersion: 96.0.4664.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a77c9f17d4e4b3e9abd4c4f08c60038b
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElements(ElementLocation.java:179)
+	at org.openqa.selenium.remote.ElementLocation.findElements(ElementLocation.java:102)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:398)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:390)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElements(DefaultElementLocator.java:87)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:37)
+	at com.sun.proxy.$Proxy24.get(Unknown Source)
+	at stepDefinitions.TC06StepDefinitions.selects_computer_components(TC06StepDefinitions.java:17)
+	at ✽.selects Computer Components(file:///Users/zulbis/Documents/AmazonWebPage/src/test/resources/features/TC06.feature:11)
+]]></failure>
+    </testcase>
+    <testcase classname="all listed products contain ..." name="_2" time="0.048">
+        <failure message="no such window: target window already closed&#10;from unknown error: web view not found&#10;  (Session info: chrome=96.0.4664.93)&#10;Build info: version: '4.0.0', revision: '3a21814679'&#10;System info: host: 'Zulfiyes-MacBook-Pro.local', ip: '2603:8081:1607:f1b7:0:0:0:14b4%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '14.0.2'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [a77c9f17d4e4b3e9abd4c4f08c60038b, get {url=https://www.amazon.com}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.93, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /var/folders/w0/2f6p2hfj42v...}, goog:chromeOptions: {debuggerAddress: localhost:64503}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:64503/devtoo..., se:cdpVersion: 96.0.4664.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: a77c9f17d4e4b3e9abd4c4f08c60038b" type="org.openqa.selenium.NoSuchWindowException"><![CDATA[When user goes to Amazon Home Page..........................................failed
+And user clicks to All categories...........................................skipped
+And selects Computers.......................................................skipped
+And selects Computer Components.............................................skipped
+And selects the first product listed........................................skipped
+And adds to cart............................................................skipped
+Then user clicks to All categories..........................................skipped
+And selects Electronics.....................................................skipped
+And selects Camera & Photo..................................................skipped
+And selects the second product listed.......................................skipped
+And adds to cart............................................................skipped
+And goes to cart............................................................skipped
+Then Verifies that there are 2 items in the cart............................skipped
+And deletes the first item in the cart......................................skipped
+Then Verifies that there are 1 items in the cart............................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=96.0.4664.93)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'Zulfiyes-MacBook-Pro.local', ip: '2603:8081:1607:f1b7:0:0:0:14b4%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '14.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a77c9f17d4e4b3e9abd4c4f08c60038b, get {url=https://www.amazon.com}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.93, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /var/folders/w0/2f6p2hfj42v...}, goog:chromeOptions: {debuggerAddress: localhost:64503}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:64503/devtoo..., se:cdpVersion: 96.0.4664.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a77c9f17d4e4b3e9abd4c4f08c60038b
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:328)
+	at stepDefinitions.TC01StepDefinitions.user_goes_to_amazon_home_page(TC01StepDefinitions.java:18)
+	at ✽.user goes to Amazon Home Page(file:///Users/zulbis/Documents/AmazonWebPage/src/test/resources/features/TC07.feature:6)
+]]></failure>
+    </testcase>
+    <testcase classname="all listed products contain ..." name="_2" time="0.022">
+        <failure message="no such window: target window already closed&#10;from unknown error: web view not found&#10;  (Session info: chrome=96.0.4664.93)&#10;Build info: version: '4.0.0', revision: '3a21814679'&#10;System info: host: 'Zulfiyes-MacBook-Pro.local', ip: '2603:8081:1607:f1b7:0:0:0:14b4%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '14.0.2'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [a77c9f17d4e4b3e9abd4c4f08c60038b, get {url=https://www.amazon.com}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.93, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /var/folders/w0/2f6p2hfj42v...}, goog:chromeOptions: {debuggerAddress: localhost:64503}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:64503/devtoo..., se:cdpVersion: 96.0.4664.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: a77c9f17d4e4b3e9abd4c4f08c60038b" type="org.openqa.selenium.NoSuchWindowException"><![CDATA[When user goes to Amazon Home Page..........................................failed
+Then opens the signin window................................................skipped
+And clicks  Create a List link..............................................skipped
+Then Verifies that the title contains "Your List"...........................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=96.0.4664.93)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'Zulfiyes-MacBook-Pro.local', ip: '2603:8081:1607:f1b7:0:0:0:14b4%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '14.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a77c9f17d4e4b3e9abd4c4f08c60038b, get {url=https://www.amazon.com}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.93, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /var/folders/w0/2f6p2hfj42v...}, goog:chromeOptions: {debuggerAddress: localhost:64503}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:64503/devtoo..., se:cdpVersion: 96.0.4664.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a77c9f17d4e4b3e9abd4c4f08c60038b
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:328)
+	at stepDefinitions.TC01StepDefinitions.user_goes_to_amazon_home_page(TC01StepDefinitions.java:18)
+	at ✽.user goes to Amazon Home Page(file:///Users/zulbis/Documents/AmazonWebPage/src/test/resources/features/TC08.feature:6)
+]]></failure>
+    </testcase>
+    <testcase classname="valid sign in" name="_2" time="0.034">
+        <failure message="no such window: target window already closed&#10;from unknown error: web view not found&#10;  (Session info: chrome=96.0.4664.93)&#10;Build info: version: '4.0.0', revision: '3a21814679'&#10;System info: host: 'Zulfiyes-MacBook-Pro.local', ip: '2603:8081:1607:f1b7:0:0:0:14b4%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '14.0.2'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [a77c9f17d4e4b3e9abd4c4f08c60038b, get {url=https://www.amazon.com}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.93, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /var/folders/w0/2f6p2hfj42v...}, goog:chromeOptions: {debuggerAddress: localhost:64503}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:64503/devtoo..., se:cdpVersion: 96.0.4664.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: a77c9f17d4e4b3e9abd4c4f08c60038b" type="org.openqa.selenium.NoSuchWindowException"><![CDATA[Given user goes to Amazon Home Page.........................................failed
+Then user clicks signin button..............................................skipped
+And user enters valid email.................................................skipped
+And clicks continue button..................................................skipped
+Then user enters valid password.............................................skipped
+And verifies that Hello, Login text on the sign in button...................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=96.0.4664.93)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'Zulfiyes-MacBook-Pro.local', ip: '2603:8081:1607:f1b7:0:0:0:14b4%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '14.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a77c9f17d4e4b3e9abd4c4f08c60038b, get {url=https://www.amazon.com}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.93, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /var/folders/w0/2f6p2hfj42v...}, goog:chromeOptions: {debuggerAddress: localhost:64503}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:64503/devtoo..., se:cdpVersion: 96.0.4664.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a77c9f17d4e4b3e9abd4c4f08c60038b
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:328)
+	at stepDefinitions.TC01StepDefinitions.user_goes_to_amazon_home_page(TC01StepDefinitions.java:18)
+	at ✽.user goes to Amazon Home Page(file:///Users/zulbis/Documents/AmazonWebPage/src/test/resources/features/TC09.feature:5)
+]]></failure>
+    </testcase>
+    <testcase classname="create a list" name="_2" time="0.037">
+        <failure message="no such window: target window already closed&#10;from unknown error: web view not found&#10;  (Session info: chrome=96.0.4664.93)&#10;Build info: version: '4.0.0', revision: '3a21814679'&#10;System info: host: 'Zulfiyes-MacBook-Pro.local', ip: '2603:8081:1607:f1b7:0:0:0:14b4%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '14.0.2'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [a77c9f17d4e4b3e9abd4c4f08c60038b, get {url=https://www.amazon.com}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.93, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /var/folders/w0/2f6p2hfj42v...}, goog:chromeOptions: {debuggerAddress: localhost:64503}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:64503/devtoo..., se:cdpVersion: 96.0.4664.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: a77c9f17d4e4b3e9abd4c4f08c60038b" type="org.openqa.selenium.NoSuchWindowException"><![CDATA[When user goes to Amazon Home Page..........................................failed
+Then user clicks signin button..............................................skipped
+Then user enters valid email................................................skipped
+Then clicks continue button.................................................skipped
+And user enters valid password..............................................skipped
+Then user searches for "samsung laptop".....................................skipped
+Then selects the first item.................................................skipped
+And users clicks add to List button.........................................skipped
+And opens to shopping list..................................................skipped
+And checks if the product is in the list....................................skipped
+Then clicks delete button...................................................skipped
+And checks if the product is not in the list................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=96.0.4664.93)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'Zulfiyes-MacBook-Pro.local', ip: '2603:8081:1607:f1b7:0:0:0:14b4%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '14.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a77c9f17d4e4b3e9abd4c4f08c60038b, get {url=https://www.amazon.com}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.93, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /var/folders/w0/2f6p2hfj42v...}, goog:chromeOptions: {debuggerAddress: localhost:64503}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:64503/devtoo..., se:cdpVersion: 96.0.4664.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a77c9f17d4e4b3e9abd4c4f08c60038b
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:328)
+	at stepDefinitions.TC01StepDefinitions.user_goes_to_amazon_home_page(TC01StepDefinitions.java:18)
+	at ✽.user goes to Amazon Home Page(file:///Users/zulbis/Documents/AmazonWebPage/src/test/resources/features/TC10.feature:5)
+]]></failure>
     </testcase>
 </testsuite>

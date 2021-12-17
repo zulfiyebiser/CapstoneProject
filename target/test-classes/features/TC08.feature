@@ -1,4 +1,4 @@
-@all
+@all8
 @Parallel2
 Feature: all listed products contain ...
 

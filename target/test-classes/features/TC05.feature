@@ -1,4 +1,4 @@
-@all
+@all5
 @Parallel1
   Feature: check the sub menu
 

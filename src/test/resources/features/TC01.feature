@@ -1,5 +1,5 @@
 @all
-@Parallel11
+@Parallel1
 Feature: Amazon invalid sign in
 
   Background:

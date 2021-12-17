@@ -1,13 +1,114 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="13.603">
-    <testcase classname="Amazon invalid sign in" name="Amazon invalid sign in" time="13.328">
-        <system-out>
-            <![CDATA[When user goes to Amazon Home Page..........................................passed
+<testsuite errors="0" failures="2" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="6" time="86.261">
+    <testcase classname="Amazon invalid sign in" name="Amazon invalid sign in" time="12.033">
+        <system-out><![CDATA[When user goes to Amazon Home Page..........................................passed
 Then user clicks signin button..............................................passed
 And user enters invalid email...............................................passed
 And clicks continue button..................................................passed
 Then checks that the error message is displayed.............................passed
-]]>
-        </system-out>
+]]></system-out>
+    </testcase>
+    <testcase classname="Amazon search" name="Search for product add to basket" time="5.835">
+        <system-out><![CDATA[When user goes to Amazon Home Page..........................................passed
+Given user searches for "computer"..........................................passed
+When the search results are displayed.......................................passed
+Then the search results has the "computer" in it............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Amazon search" name="Search for product add to basket 2" time="6.963">
+        <system-out><![CDATA[When user goes to Amazon Home Page..........................................passed
+Given user searches for "flower"............................................passed
+When the search results are displayed.......................................passed
+Then the search results has the "flower" in it..............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Check basket total" name="_2" time="26.49">
+        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[@id='price_inside_buybox']&quot;}&#10;  (Session info: chrome=96.0.4664.93)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.0.0', revision: '3a21814679'&#10;System info: host: 'Zulfiyes-MacBook-Pro.local', ip: '2603:8081:1607:f1b7:0:0:0:14b4%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '14.0.2'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [9f3039a69fe3e95ef4bab33c34a48ea8, findElement {using=xpath, value=//span[@id='price_inside_buybox']}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.93, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /var/folders/w0/2f6p2hfj42v...}, goog:chromeOptions: {debuggerAddress: localhost:64791}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:64791/devtoo..., se:cdpVersion: 96.0.4664.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 9f3039a69fe3e95ef4bab33c34a48ea8" type="org.openqa.selenium.NoSuchElementException"><![CDATA[When user goes to Amazon Home Page..........................................passed
+Given user searches for "computer laptop"...................................passed
+Then the search results has the "computer laptop" in it.....................passed
+Given user adds first item to basket........................................failed
+When user checks basket total...............................................skipped
+Then it should match the price of the item added into basket................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[@id='price_inside_buybox']"}
+  (Session info: chrome=96.0.4664.93)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'Zulfiyes-MacBook-Pro.local', ip: '2603:8081:1607:f1b7:0:0:0:14b4%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '14.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9f3039a69fe3e95ef4bab33c34a48ea8, findElement {using=xpath, value=//span[@id='price_inside_buybox']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.93, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /var/folders/w0/2f6p2hfj42v...}, goog:chromeOptions: {debuggerAddress: localhost:64791}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:64791/devtoo..., se:cdpVersion: 96.0.4664.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9f3039a69fe3e95ef4bab33c34a48ea8
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy23.getText(Unknown Source)
+	at stepDefinitions.TC03StepDefinitions.user_adds_to_basket(TC03StepDefinitions.java:18)
+	at ✽.user adds first item to basket(file:///Users/zulbis/Documents/AmazonWebPage/src/test/resources/features/TC03.feature:11)
+]]></failure>
+    </testcase>
+    <testcase classname="Amazon Search Feature" name="Second most expensive product contains Nikon D3X" time="11.824">
+        <system-out><![CDATA[When user goes to Amazon Home Page..........................................passed
+When user searches for "Nikon"..............................................passed
+And sorts the result from highest price to lowest...........................passed
+And clicks second product for details.......................................passed
+Then checks product title contains "Nikon D3100"............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="check the sub menu" name="Check the Computers menu" time="22.841">
+        <failure message="element not interactable&#10;  (Session info: chrome=96.0.4664.93)&#10;Build info: version: '4.0.0', revision: '3a21814679'&#10;System info: host: 'Zulfiyes-MacBook-Pro.local', ip: '2603:8081:1607:f1b7:0:0:0:14b4%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '14.0.2'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [308cdd9f75355b89fc0711aa5f3fd40e, clickElement {id=84aafa16-6cef-4b69-8d3a-4eaacf692164}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.93, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /var/folders/w0/2f6p2hfj42v...}, goog:chromeOptions: {debuggerAddress: localhost:64992}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:64992/devtoo..., se:cdpVersion: 96.0.4664.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on MAC (308cdd9f75355b89fc0711aa5f3fd40e)] -&gt; xpath: (//*[text()='Computers'])[2]]&#10;Session ID: 308cdd9f75355b89fc0711aa5f3fd40e" type="org.openqa.selenium.ElementNotInteractableException"><![CDATA[When user goes to Amazon Home Page..........................................passed
+And user clicks to All categories...........................................passed
+And selects Computers.......................................................failed
+Then checks that Computers menu has 15 sub categories.......................skipped
+
+StackTrace:
+org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=96.0.4664.93)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'Zulfiyes-MacBook-Pro.local', ip: '2603:8081:1607:f1b7:0:0:0:14b4%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '14.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [308cdd9f75355b89fc0711aa5f3fd40e, clickElement {id=84aafa16-6cef-4b69-8d3a-4eaacf692164}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.93, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /var/folders/w0/2f6p2hfj42v...}, goog:chromeOptions: {debuggerAddress: localhost:64992}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:64992/devtoo..., se:cdpVersion: 96.0.4664.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on MAC (308cdd9f75355b89fc0711aa5f3fd40e)] -> xpath: (//*[text()='Computers'])[2]]
+Session ID: 308cdd9f75355b89fc0711aa5f3fd40e
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy23.click(Unknown Source)
+	at stepDefinitions.TC05StepDefinitions.selects_computers(TC05StepDefinitions.java:20)
+	at ✽.selects Computers(file:///Users/zulbis/Documents/AmazonWebPage/src/test/resources/features/TC05.feature:10)
+]]></failure>
     </testcase>
 </testsuite>

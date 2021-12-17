@@ -1,107 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="11" time="0.897">
-    <testcase classname="Amazon invalid sign in" name="Amazon invalid sign in" time="0.072">
-        <system-out><![CDATA[When user goes to Amazon Home Page..........................................passed
-Then user clicks signin button..............................................passed
-And user enters invalid email...............................................passed
-And clicks continue button..................................................passed
-Then checks that the error message is displayed.............................passed
-]]></system-out>
-    </testcase>
-    <testcase classname="Amazon search" name="Search for product add to basket" time="0.013">
-        <system-out><![CDATA[When user goes to Amazon Home Page..........................................passed
-Given user searches for "computer"..........................................passed
-When the search results are displayed.......................................passed
-Then the search results has the "computer" in it............................passed
-]]></system-out>
-    </testcase>
-    <testcase classname="Amazon search" name="Search for product add to basket 2" time="0.017">
-        <system-out><![CDATA[When user goes to Amazon Home Page..........................................passed
-Given user searches for "flower"............................................passed
-When the search results are displayed.......................................passed
-Then the search results has the "flower" in it..............................passed
-]]></system-out>
-    </testcase>
-    <testcase classname="Check basket total" name="_2" time="0.018">
-        <system-out><![CDATA[When user goes to Amazon Home Page..........................................passed
-Given user searches for "computer laptop"...................................passed
-Then the search results has the "computer laptop" in it.....................passed
-Given user adds first item to basket........................................passed
-When user checks basket total...............................................passed
-Then it should match the price of the item added into basket................passed
-]]></system-out>
-    </testcase>
-    <testcase classname="Amazon Search Feature" name="Second most expensive product contains Nikon D3X" time="0.016">
-        <system-out><![CDATA[When user goes to Amazon Home Page..........................................passed
-When user searches for "Nikon"..............................................passed
-And sorts the result from highest price to lowest...........................passed
-And clicks second product for details.......................................passed
-Then checks product title contains "Nikon D3100"............................passed
-]]></system-out>
-    </testcase>
-    <testcase classname="check the sub menu" name="Check the Computers menu" time="0.009">
-        <system-out><![CDATA[When user goes to Amazon Home Page..........................................passed
-And user clicks to All categories...........................................passed
-And selects Computers.......................................................passed
-Then checks that Computers menu has 15 sub categories.......................passed
-]]></system-out>
-    </testcase>
-    <testcase classname="all listed products contain ..." name="_2" time="0.018">
-        <system-out><![CDATA[When user goes to Amazon Home Page..........................................passed
-And user clicks to All categories...........................................passed
-And selects Computers.......................................................passed
-And selects Computer Components.............................................passed
-And selects the Seagate checkbox............................................passed
-Then verifies that all listed products contain "Seagate" information........passed
-]]></system-out>
-    </testcase>
-    <testcase classname="all listed products contain ..." name="_2" time="0.021">
-        <system-out><![CDATA[When user goes to Amazon Home Page..........................................passed
-And user clicks to All categories...........................................passed
-And selects Computers.......................................................passed
-And selects Computer Components.............................................passed
-And selects the first product listed........................................passed
-And adds to cart............................................................passed
-Then user clicks to All categories..........................................passed
-And selects Electronics.....................................................passed
-And selects Camera & Photo..................................................passed
-And selects the second product listed.......................................passed
-And adds to cart............................................................passed
-And goes to cart............................................................passed
-Then Verifies that there are 2 items in the cart............................passed
-And deletes the first item in the cart......................................passed
-Then Verifies that there are 1 items in the cart............................passed
-]]></system-out>
-    </testcase>
-    <testcase classname="all listed products contain ..." name="_2" time="0.009">
-        <system-out><![CDATA[When user goes to Amazon Home Page..........................................passed
-Then opens the signin window................................................passed
-And clicks  Create a List link..............................................passed
-Then Verifies that the title contains "Your List"...........................passed
-]]></system-out>
-    </testcase>
-    <testcase classname="valid sign in" name="_2" time="0.019">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="38.298">
+    <testcase classname="valid sign in" name="_2" time="37.995">
         <system-out><![CDATA[Given user goes to Amazon Home Page.........................................passed
 Then user clicks signin button..............................................passed
 And user enters valid email.................................................passed
 And clicks continue button..................................................passed
 Then user enters valid password.............................................passed
 And verifies that Hello, Login text on the sign in button...................passed
-]]></system-out>
-    </testcase>
-    <testcase classname="create a list" name="_2" time="0.021">
-        <system-out><![CDATA[When user goes to Amazon Home Page..........................................passed
-Then user clicks signin button..............................................passed
-Then user enters valid email................................................passed
-Then clicks continue button.................................................passed
-And user enters valid password..............................................passed
-Then user searches for "samsung laptop".....................................passed
-Then selects the first item.................................................passed
-And users clicks add to List button.........................................passed
-And opens to shopping list..................................................passed
-And checks if the product is in the list....................................passed
-Then clicks delete button...................................................passed
-And checks if the product is not in the list................................passed
 ]]></system-out>
     </testcase>
 </testsuite>

@@ -1,5 +1,5 @@
-@all
-@Parallel2
+
+@smoke
 Feature: valid sign in
   Background:
     Given user goes to Amazon Home Page
